@@ -1,0 +1,17 @@
+{
+  "name": "UIT.SE113.Lab3",
+  "version": "1.0.0",
+  "description": "Use testcafe as a tool to test functions in lab3 - SE113",
+  "main": "index.js",
+  "directories": {
+    "test": "testcafe chrome:headless test/**/*.test.js"
+  },
+  "scripts": {
+    "test": "testcafe chrome:headless test/**/*.test.js"
+  },
+  "author": "Group 21",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.16.1"
+  }
+}
