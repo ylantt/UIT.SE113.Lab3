@@ -1,0 +1,26 @@
+
+table{
+    border: 2px solid black;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#67C5FF;
+    font-size: 30px;
+}
+input{
+    width: 100px;
+    margin-left: 15%;
+    float: left;
+}
+td{
+    text-align: right;
+}
+
+button{
+    margin-right:40%;
+    margin-top: 30px;
+}
