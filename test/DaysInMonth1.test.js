@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `TestingDateApp`
-    .page`http://localhost:8080/UI.html`;
+    .page`http://localhost:8080/TestingDateApp/UI.html`;
 
 test(`DIM01 - Should_0_When_InputInvalidMonth`, async t=>{
 
