@@ -7,11 +7,17 @@
     "test": "testcafe chrome:headless test/**/*.test.js"
   },
   "scripts": {
-    "test": "testcafe chrome:headless test/**/*.test.js"
+    "test": "testcafe chrome:headless test/**/*.test.js",
+    "server": "http-server",
+    "dev": "npm-run-all --parallel server test"
   },
   "author": "Group 21",
   "license": "ISC",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "testcafe": "^1.16.1"
+  },
+  "dependencies": {
+    "http-server": "^14.0.0"
   }
 }
