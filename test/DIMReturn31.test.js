@@ -11,6 +11,30 @@ test(`DIM08 - Should return 31 on April`, async t=>{
        .expect(Selector('#NumberOfDays').innerText).eql('31');
 });
 
+test(`DIM09 - Should return 31 on May`, async t=>{
+    await t
+        .typeText('#month', '5')
+        .typeText('#year', '2021')
+        .click('#checkValid')
+        .expect(Selector('#NumberOfDays').innerText).eql('31');
+ });
+
+ test(`DIM11 - Should return 31 on Jul`, async t=>{
+    await t
+        .typeText('#month', '7')
+        .typeText('#year', '1900')
+        .click('#checkValid')
+        .expect(Selector('#NumberOfDays').innerText).eql('31');
+ });
+
+ test(`DIM12 - Should return 31 on Aug`, async t=>{
+    await t
+        .typeText('#month', '8')
+        .typeText('#year', '2021')
+        .click('#checkValid')
+        .expect(Selector('#NumberOfDays').innerText).eql('31');
+ });
+
 test(`DIM14 - Should return 31 on Oct`, async t=>{
    await t
        .typeText('#month', '10')

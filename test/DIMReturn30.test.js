@@ -11,6 +11,16 @@ test(`DIM07 - Should return 30 on March`, async t=>{
        .expect(Selector('#NumberOfDays').innerText).eql('30');
 });
 
+
+test(`DIM10 - Should return 30 on Jun`, async t=>{
+    await t
+        .typeText('#month', '6')
+        .typeText('#year', '1900')
+        .click('#checkValid')
+        .expect(Selector('#NumberOfDays').innerText).eql('30');
+ });
+
+
 test(`DIM13 - Should return 30 on Sep`, async t=>{
    await t
        .typeText('#month', '9')
