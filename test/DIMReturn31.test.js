@@ -3,9 +3,18 @@ import { Selector } from 'testcafe';
 fixture `Test cases which return 31 in Day in Month function`
     .page`http://localhost:8080/TestingDateApp/UI.html`;
 
-test(`DIM08 - Should return 31 on April`, async t=>{
+test(`DIM02 - Should return 31 on January`, async t=>{
+    await t
+        .typeText('#month', '1')
+        .typeText('#year', '2021')
+        .click('#checkValid')
+        // Use the assertion to check if the actual result is equal to the expected one
+        .expect(Selector('#NumberOfDays').innerText).eql('31');
+});
+
+test(`DIM08 - Should return 31 on March`, async t=>{
    await t
-       .typeText('#month', '4')
+       .typeText('#month', '3')
        .typeText('#year', '1896')
        .click('#checkValid')
        .expect(Selector('#NumberOfDays').innerText).eql('31');
