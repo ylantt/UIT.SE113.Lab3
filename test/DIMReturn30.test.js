@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `Test cases which return 30 in Day in Month function`
-    .page`http://localhost:8080/TestingDateApp/UI.html`;
+    .page`http://192.168.56.1:8080/UI.html`;
 
 test(`DIM07 - Should return 30 on March`, async t=>{
    await t
