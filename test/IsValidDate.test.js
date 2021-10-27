@@ -2,7 +2,7 @@
 import { Selector } from 'testcafe';
 
 fixture `TestingDateApp`
-    .page`http://192.168.56.1:8080/UI.html`;
+    .page`http://localhost:8080/TestingDateApp/UI.html`;
 
 test(`IVD01 - Should_Invalid_When_InputDayIs_1_InputMonthIs_0_InputYearIs_2020`, async t=>{
 

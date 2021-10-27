@@ -1,7 +1,7 @@
 import { Selector } from 'testcafe';
 
 fixture `DayInMonth function - testcase return 28 days`
-    .page`http://192.168.56.1:8080/UI.html`;
+    .page`http://localhost:8080/TestingDateApp/UI.html`;
 
 test(`DIM05 - Should return 28 on Feb - case year mod 400, year mod 100, year mod 4 are not equal 0`, async t=>{
 
